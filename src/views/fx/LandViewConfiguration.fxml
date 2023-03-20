@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="308.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.fx.LandViewConfigurationController">
+   <children>
+      <Label fx:id="linesColumnsLabel" layoutX="141.0" layoutY="107.0" text="20x30">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Slider fx:id="columnsScroll" blockIncrement="1.0" layoutX="95.0" layoutY="69.0" majorTickUnit="26.0" max="30.0" min="5.0" showTickLabels="true" showTickMarks="true" value="30.0" />
+      <Slider fx:id="linesScroll" blockIncrement="1.0" layoutX="42.0" layoutY="88.0" majorTickUnit="17.0" max="20.0" min="4.0" minorTickCount="4" orientation="VERTICAL" prefHeight="84.0" prefWidth="16.0" showTickLabels="true" showTickMarks="true" value="20.0" />
+      <Button fx:id="goButton" layoutX="123.0" layoutY="240.0" mnemonicParsing="false" onAction="#goButtonClicked" prefHeight="54.0" prefWidth="82.0" text="Go !" />
+      <Slider fx:id="bombsScroll" blockIncrement="1.0" layoutX="94.0" layoutY="189.0" majorTickUnit="20.0" max="20.0" min="1.0" minorTickCount="4" showTickLabels="true" showTickMarks="true" value="5.0" />
+      <Label layoutX="98.0" layoutY="172.0" text="Nombre de bombes : " />
+      <Label layoutX="97.0" layoutY="14.0" text="Le démineur">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="bombsLabel" layoutX="218.0" layoutY="172.0" text="5" />
+   </children>
+</AnchorPane>
